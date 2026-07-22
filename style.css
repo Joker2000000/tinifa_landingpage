@@ -1,6 +1,4 @@
-/* ==========================================
-   1. GRUNDSTYLING & SCHRIFTEN
-   ========================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,9 +18,7 @@ body {
     padding: 40px 20px;
 }
 
-/* ==========================================
-   2. MENÜ / NAVIGATION
-   ========================================== */
+
 header {
     background-color: rgba(255, 255, 255, 0.95);
     position: sticky;
@@ -66,11 +62,9 @@ nav ul li a:hover {
     color: #8a6f9f;
 }
 
-/* ==========================================
-   3. HERO-BEREICH (FULL SCREEN BANNER MIT SLIDESHOW)
-   ========================================== */
+
 .hero-section {
-    height: 100vh; /* 100% Bildschirmhöhe */
+    height: 100vh; 
     position: relative;
     overflow: hidden;
     display: flex;
@@ -78,7 +72,7 @@ nav ul li a:hover {
     justify-content: center;
 }
 
-/* SLIDESHOW CONTAINER */
+
 .hero-slideshow {
     position: absolute;
     top: 0;
@@ -100,7 +94,7 @@ nav ul li a:hover {
     animation: fadeSlideshow 15s infinite ease-in-out;
 }
 
-/* DIE EINZELNEN BILDER DEINER SLIDESHOW */
+
 .slide-1 {
     background-image: url('images/hero.jpg');
     animation-delay: 0s;
@@ -116,7 +110,7 @@ nav ul li a:hover {
     animation-delay: 10s;
 }
 
-/* FADE-ANIMATION (Sanftes Ein- und Ausblenden) */
+
 @keyframes fadeSlideshow {
     0% { opacity: 0; }
     10% { opacity: 1; }
@@ -125,10 +119,10 @@ nav ul li a:hover {
     100% { opacity: 0; }
 }
 
-/* OVERLAY ÜBER DEN BILDERN */
+
 .hero-overlay {
     position: relative;
-    z-index: 2; /* Liegt über der Slideshow */
+    z-index: 2; 
     background: transparent;
     width: 100%;
     height: 100%;
@@ -177,9 +171,7 @@ nav ul li a:hover {
     60% { transform: translateY(-5px); }
 }
 
-/* ==========================================
-   4. TEXT-KARTE (ÜBERLAPPUNG BEIM SCROLLEN)
-   ========================================== */
+
 .philosophy-section {
     position: relative;
     z-index: 10;
@@ -202,9 +194,7 @@ nav ul li a:hover {
     color: #4a3656;
 }
 
-/* ==========================================
-   5. ALLGEMEINE SEKTIONEN & ÜBERSCHRIFTEN
-   ========================================== */
+
 section {
     padding: 30px 0;
 }
@@ -240,9 +230,7 @@ p {
     padding-bottom: 8px;
 }
 
-/* ==========================================
-   6. PRODUKT-GRID & KARTEN
-   ========================================== */
+
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -303,9 +291,6 @@ p {
     margin-bottom: 0;
 }
 
-/* ==========================================
-   7. HIGHLIGHT-BOX & BILDER-SLIDER
-   ========================================== */
 .highlight-box {
     background-color: #f2eff4;
     padding: 30px;
@@ -335,7 +320,7 @@ p {
 }
 
 .slider-hint {
-    display: none; /* Auf Desktop ausblenden */
+    display: none; 
 }
 
 .final-invite {
@@ -362,9 +347,7 @@ hr {
     margin-top: 15px;
 }
 
-/* ==========================================
-   8. FOOTER
-   ========================================== */
+
 footer {
     background-color: #4a3656;
     color: #ebdff2;
@@ -378,11 +361,7 @@ footer a {
     text-decoration: underline;
 }
 
-/* ==========================================
-   9. IMPRESSUM MODAL (POPUP OHNE JAVASCRIPT)
-   ========================================== */
 
-/* Standardmäßig unsichtbar */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -400,13 +379,13 @@ footer a {
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* Wird aktiv, sobald die URL #impressum enthält */
+
 .modal-overlay:target {
     opacity: 1;
     visibility: visible;
 }
 
-/* Modal Content Box */
+
 .modal-box {
     background: #ffffff;
     padding: 35px 30px;
@@ -424,7 +403,7 @@ footer a {
     transform: translateY(0);
 }
 
-/* Schließen-Button (X) */
+
 .close-btn {
     position: absolute;
     top: 15px;
@@ -441,7 +420,7 @@ footer a {
     color: #4a3656;
 }
 
-/* Klickbarer Bereich hinter der Box zum Schließen */
+
 .modal-backdrop-close {
     position: absolute;
     top: 0;
@@ -470,9 +449,7 @@ footer a {
     color: #777;
 }
 
-/* ==========================================
-   10. RESPONSIVE ANPASSUNGEN (SMARTPHONES)
-   ========================================== */
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -482,7 +459,7 @@ footer a {
         margin: 0 10px;
     }
 
-    /* Full-Screen Banner Anpassungen mobil */
+    
     .hero-content h1 {
         font-size: 44px;
     }
@@ -497,7 +474,7 @@ footer a {
     h1 { font-size: 26px; }
     h2 { font-size: 24px; }
 
-    /* TOUCH SWIPE-SLIDER AUF HANDYS */
+
     .image-gallery {
         overflow-x: auto;
         scroll-snap-type: x mandatory;
@@ -526,7 +503,7 @@ footer a {
         font-style: italic;
     }
 
-    /* Custom Scrollbar Indikator */
+    
     .image-gallery::-webkit-scrollbar {
         height: 4px;
     }

@@ -26,13 +26,37 @@
         </nav>
     </header>
 
+    <!-- HERO SEKTION (FULL SCREEN BANNER MIT SLIDESHOW) -->
     <section id="chi-siamo" class="hero-section">
+        
+        <!-- HINTERGRUND-SLIDESHOW (Bilder werden sanft überblendet) -->
+        <div class="hero-slideshow">
+            <div class="slide slide-1"></div>
+            <div class="slide slide-2"></div>
+            <div class="slide slide-3"></div>
+        </div>
+
         <div class="hero-overlay">
-            <div class="container">
-                <div class="hero-card">
-                    <h1>Tinifa: L’Essenza della Natura</h1>
-                    <p class="intro">Benvenuti in Tinifa. Sono Christin Faerber e ho fondato questa azienda agricola con un obiettivo preciso: creare un legame autentico e profondo tra la terra e chi la abita.</p>
-                </div>
+            <div class="hero-content">
+                <h1>Tinifa</h1>
+                <p class="hero-subtitle">L’Essenza della Natura</p>
+                <a href="#chi-siamo-text" class="scroll-down-arrow" aria-label="Scroll down">↓</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEXTBEREICH: SCHIEBT SICH BEIM SCROLLEN INS BILD -->
+    <section id="chi-siamo-text" class="philosophy-section">
+        <div class="container">
+            <div class="welcome-card">
+                
+                <!-- Überschrift entfernt, Text startet direkt -->
+                <p class="intro">Benvenuti in Tinifa. Sono Christin Faerber e ho fondato questa azienda agricola con un obiettivo preciso: creare un legame autentico e profondo tra la terra e chi la abita.</p>
+                <p>Vivo il mio lavoro come un impegno verso la natura, intesa come un dono prezioso da accogliere con gratitudine e rispetto. Tinifa non è semplicemente un luogo di produzione, ma un progetto di vita dedicato alla cura della terra e al rispetto dei suoi ritmi naturali.</p>
+                
+                <h3>La Mia Filosofia</h3>
+                <p>Credo fermamente che il contatto con la terra sia la via più diretta per ritrovare equilibrio e armonia nel quotidiano. In Tinifa, ogni attività è guidata dall'amore per il territorio e dal desiderio di onorare la bellezza della creazione. Lavorare la terra significa per me ascoltare ciò che essa ha da offrire, curando con dedizione ogni fase: dalla coltivazione delle piante, che seguo personalmente tra i campi di Vedriano, alla trasformazione finale.</p>
+
             </div>
         </div>
     </section>
@@ -44,6 +68,18 @@
             <h3>La Mia Filosofia</h3>
             <p>Credo fermamente che il contatto con la terra sia la via più diretta per ritrovare equilibrio e armonia nel quotidiano. In Tinifa, ogni attività è guidata dall'amore per il territorio e dal desiderio di onorare la bellezza della creazione. Lavorare la terra significa per me ascoltare ciò che essa ha da offrire, curando con dedizione ogni fase: dalla coltivazione delle piante, che seguo personally tra i campi di Vedriano, alla trasformazione finale.</p>
         </div>
+<div class="container">
+  <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="images/aromatische_kissen.jpg" alt="Tinifa Picknick nel campo">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Extraktion_Öl.jpg" alt="Tinifa Lettura nel campo">
+                </div>
+            </div>
+            <p class="slider-hint">👈 Scorri per vedere di più 👉</p>
+</div>
+
     </section>
 
     <section id="produzione">
@@ -51,10 +87,57 @@
             <h2>La Mia Produzione Artigianale</h2>
             <p>Il cuore di Tinifa è la coltivazione di essenze botaniche, con la lavanda (<em>Lavandula angustifolia</em>) protagonista indiscussa, accompagnata da calendula, melissa e menta.</p>
             <p>Nel mio laboratorio interno la trasformazione avviene seguendo metodi tradizionali e artigianali per creare prodotti puri e dedicati al tuo benessere:</p>
-            
+
+            <h3 class="category-title">🎨 Artigianato Botanico & Casa</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/prod-cuscino-fiori.jpg" alt="Cuscino Aromatico Floreale" class="product-img">
+                    <div class="product-info">
+                        <h3>Cuscino Aromatico Floreale</h3>
+                        <p>Cuscino artigianale profuma-biancheria imbottito con fiori secchi di lavanda dei nostri campi.</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/prod-cuscino-viola.jpg" alt="Cuscino Aromatico Viola" class="product-img">
+                    <div class="product-info">
+                        <h3>Cuscino Aromatico Viola</h3>
+                        <p>Cuscino profumato in stoffa viola, ideale per armadi, cassetti o da tenere vicino al cuscino.</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/prod-ceramica-set.jpg" alt="Set Ceramica Decorata" class="product-img">
+                    <div class="product-info">
+                        <h3>Set Ceramica Decorata</h3>
+                        <p>Creazione artigianale fatta a mano con decorazioni ed impronte botaniche di lavanda.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="category-title">🌿 Olii Essenziali Puri</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/prod-olio-essenziale.jpg" alt="Olio Essenziale Lavanda 1" class="product-img">
+                    <div class="product-info">
+                        <h3>Olio Essenziale 100% Puro</h3>
+                        <span class="product-slogan">“Lavanda Vera”</span>
+                        <p>Estratto con sapienza per preservare intatte le note aromatiche, ideale per profumare gli ambienti.</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/prod-olio-essenziale2.jpg" alt="Olio Essenziale Lavanda 2" class="product-img">
+                    <div class="product-info">
+                        <h3>Olio Essenziale Tascabile</h3>
+                        <span class="product-slogan">“Lavanda Vera - Formato Piccolo”</span>
+                        <p>Olio essenziale puro in pratico boccettino con contagocce per portarlo sempre con te.</p>
+                    </div>
+                </div>
+            </div>
+
             <h3 class="category-title">🌸 Linea Cosmetica & Cura</h3>
             <div class="product-grid">
-                
                 <div class="product-card">
                     <img src="images/prod-crema.jpg" alt="Crema Gioia di Lavanda" class="product-img">
                     <div class="product-info">
@@ -126,59 +209,6 @@
                         <p>Formula delicata con olio essenziale di Lavanda e glicerina vegetale per una pulizia dolce e rispettosa.</p>
                     </div>
                 </div>
-
-            </div>
-
-            <h3 class="category-title">🌿 Olii Essenziali Puri</h3>
-            <div class="product-grid">
-                
-                <div class="product-card">
-                    <img src="images/prod-olio-essenziale.jpg" alt="Olio Essenziale Lavanda 1" class="product-img">
-                    <div class="product-info">
-                        <h3>Olio Essenziale 100% Puro</h3>
-                        <span class="product-slogan">“Lavanda Vera”</span>
-                        <p>Estratto con sapienza per preservare intatte le note aromatiche, ideale per profumare gli ambienti.</p>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <img src="images/prod-olio-essenziale2.jpg" alt="Olio Essenziale Lavanda 2" class="product-img">
-                    <div class="product-info">
-                        <h3>Olio Essenziale Tascabile</h3>
-                        <span class="product-slogan">“Lavanda Vera - Formato Piccolo”</span>
-                        <p>Olio essenziale puro in pratico boccettino con contagocce per portarlo sempre con te.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <h3 class="category-title">🎨 Artigianato Botanico & Casa</h3>
-            <div class="product-grid">
-                
-                <div class="product-card">
-                    <img src="images/prod-cuscino-fiori.jpg" alt="Cuscino Aromatico Floreale" class="product-img">
-                    <div class="product-info">
-                        <h3>Cuscino Aromatico Floreale</h3>
-                        <p>Cuscino artigianale profuma-biancheria imbottito con fiori secchi di lavanda dei nostri campi.</p>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <img src="images/prod-cuscino-viola.jpg" alt="Cuscino Aromatico Viola" class="product-img">
-                    <div class="product-info">
-                        <h3>Cuscino Aromatico Viola</h3>
-                        <p>Cuscino profumato in stoffa viola, ideale per armadi, cassetti o da tenere vicino al cuscino.</p>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <img src="images/prod-ceramica-set.jpg" alt="Set Ceramica Decorata" class="product-img">
-                    <div class="product-info">
-                        <h3>Set Ceramica Decorata</h3>
-                        <p>Creazione artigianale fatta a mano con decorazioni ed impronte botaniche di lavanda.</p>
-                    </div>
-                </div>
-
             </div>
 
             <div class="highlight-box">
